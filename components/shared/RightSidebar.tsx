@@ -32,11 +32,11 @@ const dummyData = [
 ];
 
 const dummyTags = [
-  { _id: 1, name: "javascript", totalQuestions: 5 },
-  { _id: 1, name: "react", totalQuestions: 4 },
-  { _id: 1, name: "nextjs", totalQuestions: 5 },
-  { _id: 1, name: "vuejs", totalQuestions: 2 },
-  { _id: 1, name: "node", totalQuestions: 5 },
+  { _id: "1", name: "javascript", totalQuestions: 5 },
+  { _id: "2", name: "react", totalQuestions: 4 },
+  { _id: "3", name: "nextjs", totalQuestions: 5 },
+  { _id: "4", name: "vuejs", totalQuestions: 2 },
+  { _id: "5", name: "node", totalQuestions: 5 },
 ];
 
 const RightSidebar = () => {
