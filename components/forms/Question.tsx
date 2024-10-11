@@ -19,10 +19,17 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
+import { useRouter, usePathname } from "next/navigation";
 
 const type: any = "create";
 
-const Question = () => {
+interface Props {
+  mongoUserId: string;
+}
+
+const Question = ({ mongoUserId }: Props) => {
+  const router = useRouter();
+  const pathname = usePathname();
   const editorRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -40,7 +47,16 @@ const Question = () => {
   async function onSubmit(values: z.infer<typeof QuestionsSchema>) {
     setIsSubmitting(true);
     try {
-      await createQuestion();
+      await createQuestion({
+        title: values.title,
+        content: values.explanation,
+        tags: values.tags,
+        author: JSON.parse(mongoUserId),
+        path: pathname,
+      });
+
+      // navigate to home page
+      router.push("/");
     } catch (error) {
     } finally {
       setIsSubmitting(false);
