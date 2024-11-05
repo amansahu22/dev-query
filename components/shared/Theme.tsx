@@ -8,8 +8,8 @@ import {
   MenubarItem,
 } from "@radix-ui/react-menubar";
 import Image from "next/image";
-import { themes } from "../../../constants";
-import { useTheme } from "../../../context/ThemeContext";
+import { themes } from "../../constants";
+import { useTheme } from "../../context/ThemeContext";
 
 const Theme = () => {
   const { mode, setMode } = useTheme();

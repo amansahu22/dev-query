@@ -1,8 +1,8 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import GlobalSearch from "../search/GlobalSearch";
-import MobileNavbar from "../MobileNavbar";
+import MobileNavbar from "./MobileNavbar";
+import GlobalSearch from "./search/GlobalSearch";
 import Theme from "./Theme";
 
 const Navbar = () => {
