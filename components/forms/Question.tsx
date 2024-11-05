@@ -1,25 +1,25 @@
 "use client";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { createQuestion } from "@/lib/actions/question.action";
-import { QuestionsSchema } from "@/lib/validations";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Editor } from "@tinymce/tinymce-react";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import { useForm } from "react-hook-form";
+import { Form, useForm } from "react-hook-form";
 import * as z from "zod";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { useRouter, usePathname } from "next/navigation";
+import { createQuestion } from "../../lib/actions/question.action";
+import { QuestionsSchema } from "../../lib/validations";
+import {
+  FormField,
+  FormItem,
+  FormLabel,
+  FormControl,
+  FormDescription,
+  FormMessage,
+} from "../ui/form";
+import { Input } from "../ui/input";
 
 const type: any = "create";
 

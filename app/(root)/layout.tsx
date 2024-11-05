@@ -1,7 +1,7 @@
-import LeftSidebar from "@/components/shared/LeftSidebar";
-import Navbar from "@/components/shared/navbar/Navbar";
-import RightSidebar from "@/components/shared/RightSidebar";
 import { ReactNode } from "react";
+import LeftSidebar from "../../components/shared/LeftSidebar";
+import Navbar from "../../components/shared/navbar/Navbar";
+import RightSidebar from "../../components/shared/RightSidebar";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (

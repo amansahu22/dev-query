@@ -1,12 +1,13 @@
 "use clinet";
+
 import {
   Select,
+  SelectTrigger,
+  SelectValue,
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+} from "@radix-ui/react-select";
 
 interface Props {
   filters: {

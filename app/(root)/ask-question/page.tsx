@@ -1,6 +1,6 @@
-import Question from "@/components/forms/Question";
-import { getUserById } from "@/lib/actions/user.action";
 import { redirect } from "next/navigation";
+import Question from "../../../database/question.model";
+import { getUserById } from "../../../lib/actions/user.action";
 // import { auth } from "@clerk/nextjs/server";
 
 const AskQuestion = async () => {
