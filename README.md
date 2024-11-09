@@ -1,12 +1,21 @@
-[DevQuery](https://dev-query-aman.netlify.app/) is an online platform where developers ask questions, share solutions, and collaborate on coding challenges.
+# DevQuery
+
+[DevQuery](https://dev-query-aman.netlify.app/) is an online platform where developers can ask questions, share solutions, and collaborate on coding challenges.
 
 ## Getting Started
 
-First, run the development server:
+To run the local development server:
 
-```bash
-npm install
-npm run dev
+1. Install dependencies:
 
-Open [http://localhost:3000](http://localhost:8080) with your browser to see the result.
-```
+   ```bash
+   npm install
+   ```
+
+2. Spin up the local development server:
+
+   ```bash
+   npm run dev
+   ```
+
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
