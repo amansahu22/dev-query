@@ -4,7 +4,7 @@ import Question from "../../../database/question.model";
 import { getUserById } from "../../../lib/actions/user.action";
 
 const AskQuestion = async () => {
-  const { userId } = auth();
+  const { userId } = await auth();
 
   if (!userId) redirect("/sign-in");
 
