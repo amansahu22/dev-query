@@ -1,7 +1,7 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import GlobalSearch from "../search/GlobalSearch";
+import GlobalSearch from "./search/GlobalSearch";
 import MobileNavbar from "./MobileNavbar";
 import Theme from "./Theme";
 
