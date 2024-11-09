@@ -1,9 +1,9 @@
-import { ThemeProvider } from "@/context/ThemeContext";
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk as SpaceGrotest } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
+import { ThemeProvider } from "../context/ThemeContext";
 
 const inter = Inter({
   subsets: ["latin"],

@@ -1,12 +1,12 @@
-import QuestionCard from "@/components/cards/QuestionCard";
-import HomeFilters from "@/components/home/HomeFilters";
-import EmptyState from "@/components/shared/EmptyState";
-import Filter from "@/components/shared/Filter";
-import LocalSearchBar from "@/components/shared/search/LocalSearchBar";
-import { Button } from "@/components/ui/button";
-import { HomePageFilters } from "@/constants/filters";
-import { getQuestions } from "@/lib/actions/question.action";
 import Link from "next/link";
+import QuestionCard from "../../../components/cards/QuestionCard";
+import HomeFilters from "../../../components/home/HomeFilters";
+import EmptyState from "../../../components/shared/EmptyState";
+import Filter from "../../../components/shared/Filter";
+import LocalSearchBar from "../../../components/shared/search/LocalSearchBar";
+import { Button } from "../../../components/ui/button";
+import { HomePageFilters } from "../../../constants/filters";
+import { getQuestions } from "../../../lib/actions/question.action";
 
 const Home = async () => {
   const { questions } = await getQuestions({});

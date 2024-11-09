@@ -1,9 +1,13 @@
 /* eslint-disable camelcase */
-import { createUser, deleteUser, updateUser } from "@/lib/actions/user.action";
 import { WebhookEvent } from "@clerk/nextjs/server";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import { Webhook } from "svix";
+import {
+  createUser,
+  updateUser,
+  deleteUser,
+} from "../../../lib/actions/user.action";
 
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the endpoint
