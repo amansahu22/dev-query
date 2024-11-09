@@ -1,8 +1,7 @@
+import { formatLargeNumber, getTimestamp } from "@/lib/utils";
 import Link from "next/link";
-import React from "react";
-import RenderTag from "../shared/RenderTag";
 import Metric from "../shared/Metric";
-import { getTimestamp, formatLargeNumber } from "../../lib/utils";
+import RenderTag from "../shared/RenderTag";
 
 interface Props {
   _id: string;

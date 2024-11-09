@@ -1,6 +1,6 @@
 # DevQuery
 
-[DevQuery](https://dev-query-aman.netlify.app/) is an online platform where developers can ask questions, share solutions, and collaborate on coding challenges.
+[DevQuery](https://dev-query-peach.vercel.app/) is an online platform where developers can ask questions, share solutions, and collaborate on coding challenges.
 
 ## Getting Started
 

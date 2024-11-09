@@ -1,8 +1,8 @@
 "use server";
 
+import Question from "@/database/question.model";
+import User from "@/database/user.model";
 import { revalidatePath } from "next/cache";
-import Question from "../../database/question.model";
-import User from "../../database/user.model";
 import { connectToDatabase } from "../mongoose";
 import {
   CreateUserParams,
