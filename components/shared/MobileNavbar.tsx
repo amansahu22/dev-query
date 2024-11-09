@@ -1,13 +1,12 @@
 "use client";
 
 import { SignedOut } from "@clerk/nextjs";
-import { Sheet } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { sidebarLinks } from "../../constants";
 import { Button } from "../ui/button";
-import { SheetTrigger, SheetContent, SheetClose } from "../ui/sheet";
+import { SheetTrigger, SheetContent, SheetClose, Sheet } from "../ui/sheet";
 
 const MobileNavbar = () => {
   return (
