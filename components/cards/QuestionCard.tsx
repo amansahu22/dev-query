@@ -1,4 +1,4 @@
-import { formatLargeNumber, getTimestamp } from "@/lib/utils";
+import { formatAndDivideNumber, getTimestamp } from "@/lib/utils";
 import Link from "next/link";
 import Metric from "../shared/Metric";
 import RenderTag from "../shared/RenderTag";
@@ -61,21 +61,21 @@ const QuestionCard = ({
         <Metric
           imgUrl="/assets/icons/like.svg"
           alt="Upvotes"
-          value={formatLargeNumber(upvotes)}
+          value={formatAndDivideNumber(upvotes)}
           title="Votes"
           textStyles="small-medium text-dark400_light800"
         />
         <Metric
           imgUrl="/assets/icons/message.svg"
           alt="message"
-          value={formatLargeNumber(answers.length)}
+          value={formatAndDivideNumber(answers.length)}
           title="Answers"
           textStyles="small-medium text-dark400_light800"
         />
         <Metric
           imgUrl="/assets/icons/eye.svg"
           alt="eye"
-          value={formatLargeNumber(views)}
+          value={formatAndDivideNumber(views)}
           title="Views"
           textStyles="small-medium text-dark400_light800"
         />

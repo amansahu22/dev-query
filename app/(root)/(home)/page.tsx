@@ -61,7 +61,7 @@ const Home = async () => {
             description="Be the first to break the silence! 🚀 Ask a Question and kickstart the
         discussion. our query could be the next big thing others learn from. Get
         involved! 💡"
-            link="/ask-questions"
+            link="/ask-question"
             linkText="Ask a Question"
           />
         )}
